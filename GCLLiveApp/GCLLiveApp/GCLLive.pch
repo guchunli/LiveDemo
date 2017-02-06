@@ -1,0 +1,19 @@
+//
+//  GCLLive.pch
+//  GCLLiveApp
+//
+//  Created by apple on 16/12/23.
+//  Copyright © 2016年 guchunli. All rights reserved.
+//
+
+#ifndef GCLLive_pch
+#define GCLLive_pch
+
+#import <AFNetworking.h>
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+
+#define YKURLStr    @"http://116.211.167.106/api/live/aggregation?uid=133825214&interest=1"
+#define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#endif /* GCLLive_pch */

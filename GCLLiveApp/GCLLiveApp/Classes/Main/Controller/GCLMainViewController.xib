@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GCLMainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COh-9C-Ryi">
+                    <rect key="frame" x="165" y="90" width="45" height="33"/>
+                    <color key="backgroundColor" red="0.61317653520000004" green="1" blue="0.45239154349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="GLM-UU-9IW"/>
+                        <constraint firstAttribute="height" constant="33" id="I5Y-dL-QKW"/>
+                    </constraints>
+                    <state key="normal" title="采集"/>
+                    <connections>
+                        <action selector="captureVideo:" destination="-1" eventType="touchUpInside" id="VsD-dk-w1V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ0-gf-RPC">
+                    <rect key="frame" x="165" y="148" width="45" height="33"/>
+                    <color key="backgroundColor" red="0.61317653520000004" green="1" blue="0.45239154349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="QrU-m4-BqK"/>
+                        <constraint firstAttribute="height" constant="33" id="Zrz-hj-Yjh"/>
+                    </constraints>
+                    <state key="normal" title="播放"/>
+                    <connections>
+                        <action selector="playVideo:" destination="-1" eventType="touchUpInside" id="sPY-D7-Gkj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="COh-9C-Ryi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="Ua8-Ge-DWl"/>
+                <constraint firstItem="COh-9C-Ryi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V0o-Uz-nm9"/>
+                <constraint firstItem="AQ0-gf-RPC" firstAttribute="top" secondItem="COh-9C-Ryi" secondAttribute="bottom" constant="25" id="iRm-hR-ckt"/>
+                <constraint firstItem="AQ0-gf-RPC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oam-l5-6gs"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
